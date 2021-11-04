@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="1084.0" style="-fx-background-color: #ADD8E6;" stylesheets="@../css/css.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TransferController">
+   <children>
+      <Text layoutX="422.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to BTPay" wrappingWidth="385.3367462158203">
+         <font>
+            <Font name="Calibri Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="542.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer" wrappingWidth="83.73677062988281">
+         <font>
+            <Font name="Calibri Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="user" layoutX="102.0" layoutY="194.0" promptText="Username :" />
+      <Button layoutX="278.0" layoutY="192.0" mnemonicParsing="false" onAction="#control_search" prefHeight="26.0" prefWidth="124.0" text="Search">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="108.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="54.93670654296869">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="name" layoutX="177.0" layoutY="236.0" prefHeight="18.0" prefWidth="62.0" />
+      <Text layoutX="393.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Debit account:" wrappingWidth="114.1366577148437">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="bebt" layoutX="521.0" layoutY="249.0" prefHeight="18.0" prefWidth="62.0" />
+      <TextField fx:id="available" layoutX="393.0" layoutY="285.0" prefHeight="26.0" prefWidth="223.0" promptText="Available balance:" />
+      <Text layoutX="395.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount:" wrappingWidth="114.1366577148437">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="amount" layoutX="465.0" layoutY="319.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="aftertotal" layoutX="465.0" layoutY="360.0" prefHeight="26.0" prefWidth="174.0" />
+      <Button layoutX="671.0" layoutY="330.0" mnemonicParsing="false" onAction="#control_total" prefHeight="26.0" prefWidth="124.0" text="Total">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="393.0" layoutY="421.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit account:" wrappingWidth="114.1366577148437">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="accountnum" layoutX="508.0" layoutY="402.0" prefWidth="150.0" />
+      <TextField fx:id="afteradd" layoutX="393.0" layoutY="445.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="remaining" layoutX="584.0" layoutY="445.0" prefHeight="26.0" prefWidth="174.0" />
+      <Button layoutX="769.0" layoutY="443.0" mnemonicParsing="false" onAction="#control_show" prefHeight="26.0" prefWidth="124.0" text="Show">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="505.0" layoutY="491.0" mnemonicParsing="false" onAction="#control_back" prefHeight="26.0" prefWidth="124.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="645.0" layoutY="491.0" mnemonicParsing="false" onAction="#control_transfer" prefHeight="26.0" prefWidth="124.0" text="Transfer">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
